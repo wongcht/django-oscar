@@ -14,7 +14,7 @@ import sys
 # pylint: disable=deprecated-module
 from distutils.command import build as build_module
 
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 PROJECT_DIR = os.path.dirname(__file__)
 
@@ -56,7 +56,7 @@ install_requires = [
     "django-widget-tweaks>=1.4.1",
 ]
 
-sorl_thumbnail_version = "sorl-thumbnail>=12.9,<12.10"
+sorl_thumbnail_version = "sorl-thumbnail>=12.10"
 easy_thumbnails_version = "easy-thumbnails>=2.7,<2.8.6"
 
 docs_requires = [
