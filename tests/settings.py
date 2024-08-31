@@ -179,3 +179,5 @@ SECRET_KEY = "notverysecret"
 
 TEST_RUNNER = "django.test.runner.DiscoverRunner"
 FIXTURE_DIRS = [location("unit/fixtures")]
+
+THUMBNAIL_DEFAULT_STORAGE_ALIAS = "default"
