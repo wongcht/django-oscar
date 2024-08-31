@@ -334,6 +334,6 @@ class AbstractBankcard(models.Model):
     def start_month(self, format="%m/%y"):
         return self.start_date.strftime(format)
 
-    # pylint: disable=W0622
+    # pylint: disable=W0622, E1101
     def expiry_month(self, format="%m/%y"):
         return self.expiry_date.strftime(format)
