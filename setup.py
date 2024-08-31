@@ -11,10 +11,8 @@ import re
 import subprocess
 import sys
 
-# pylint: disable=deprecated-module
-from distutils.command import build as build_module
-
 from setuptools import find_packages, setup
+from setuptools.command import build as build_module
 
 PROJECT_DIR = os.path.dirname(__file__)
 
