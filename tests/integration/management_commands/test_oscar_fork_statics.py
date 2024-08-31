@@ -1,8 +1,8 @@
 import io
 import os
 import pathlib
-import tempfile
 import shutil
+import tempfile
 
 from django.core.management import call_command
 from django.core.management.base import CommandError
@@ -49,7 +49,7 @@ class OscarForkStaticsTestCase(TestCase):
             "The folder %s already exists - aborting!" % project_static_dir_path,
         )
 
-        shutil.rmtree(project_static_dir_path.rmdir(), ignore_errors=True)
+        shutil.rmtree(project_static_dir_path)
 
     def test_command_with_default_target_path(self):
         project_static_dir_path = pathlib.Path(self.project_base_dir_path, "static")
